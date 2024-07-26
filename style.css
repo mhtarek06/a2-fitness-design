@@ -25,7 +25,7 @@ body {
   background-color: black;
   /* background-color: gray; */
   max-width: 1440px;
-  height: 800px;
+  /* height: 800px; */
 }
 
 :root {
@@ -68,7 +68,6 @@ header {
   font-weight: 800;
   font-style: italic;
 }
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -96,7 +95,6 @@ header {
   border: none;
   border-radius: 30px;
 }
-
 .header-banner {
   max-width: 1044px;
   margin: 0 auto;
@@ -104,24 +102,20 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
 .text-side-header h1 {
   color: var(--white);
   font-size: 3.9rem;
 }
-
 .shape-text {
   font-size: 5rem;
   font-style: italic;
 }
-
 .text-side-header p {
   color: var(--white);
   font-size: 1rem;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .download-btn {
   font-size: 1rem;
   color: var(--white);
@@ -132,17 +126,14 @@ header {
   padding: 15px 40px;
   margin-left: 7px;
 }
-
 .banner-image {
   width: 280px;
   position: relative;
   left: 35%;
 }
-
 .banner-image img {
   max-width: 100%;
 }
-
 .work-out-video {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
@@ -162,7 +153,6 @@ header {
   margin-top: 5px;
   font-size: 0.9rem;
 }
-
 .tutorial-video-container {
   display: flex;
   align-items: center;
@@ -175,7 +165,6 @@ header {
   border: 1px solid var(--white-op-0-1);
   border-radius: 12px;
 }
-
 .circle {
   width: 35px;
   height: 35px;
@@ -183,14 +172,61 @@ header {
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .tutorial-video h1 {
   color: var(--white);
   font-size: 1.5rem;
 }
-
 .tutorial-video p {
   color: rgba(239, 237, 232, 0.65);
   margin-top: 8px;
   font-size: 1rem;
+}
+
+/* Habit section style start here */
+.habit-section {
+  max-width: 1044px;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: auto;
+}
+.fitness-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fitness-message h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+.fitness-message p {
+  color: var(--white-op-0-5);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.fitness-activities {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+.fitness-activities div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.fitness-activities img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.fitness-activities h3 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+.fitness-activities p {
+  color: var(--white-op-0-5);
+  font-size: 0.86rem;
+  margin-top: 6px;
 }
