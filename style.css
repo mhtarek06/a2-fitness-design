@@ -49,7 +49,7 @@ body {
   padding: 15px 40px;
 }
 
-/* Header style start here */
+/* Header styles start here */
 header {
   background-color: rgba(17, 17, 17, 1);
   /* background-color: gray; */
@@ -96,7 +96,7 @@ header {
   border-radius: 30px;
 }
 .header-banner {
-  max-width: 1044px;
+  max-width: 1060px;
   margin: 0 auto;
   margin-top: 40px;
   display: grid;
@@ -182,12 +182,11 @@ header {
   font-size: 1rem;
 }
 
-/* Habit section style start here */
+/* Habit section styles start here */
 .habit-section {
   max-width: 1044px;
   margin: 0 auto;
   margin-top: 100px;
-  height: auto;
 }
 .fitness-message {
   display: flex;
@@ -229,4 +228,44 @@ header {
   color: var(--white-op-0-5);
   font-size: 0.86rem;
   margin-top: 6px;
+}
+
+/* Run extra miles styles start here */
+.run-extra-mile {
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgba(34, 34, 34, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding-left: 54px;
+  padding-right: 32px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 18px;
+}
+.extra-mile-info {
+  flex: 1;
+  text-align: start;
+}
+.extra-mile-info h1 {
+  color: var(--white);
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+.extra-mile-info p {
+  color: var(--white-op-0-5);
+  font-size: 0.9rem;
+  margin-bottom: 34px;
+}
+.extra-mile-img {
+  flex: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.extra-mile-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
 }
