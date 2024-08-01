@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -47,6 +48,9 @@ body {
   border: none;
   border-radius: 30px;
   padding: 15px 40px;
+}
+.primary-btn:hover {
+  background-color: red;
 }
 
 /* Header styles start here */
@@ -108,7 +112,10 @@ header {
 }
 .shape-text {
   font-size: 5rem;
+  line-height: 1.4;
   font-style: italic;
+  font-family: "Miama", sans-serif;
+  font-weight: 400;
 }
 .text-side-header p {
   color: var(--white);
@@ -240,14 +247,13 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 150px;
-  padding-left: 54px;
-  padding-right: 32px;
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 18px;
 }
 .extra-mile-info {
   flex: 1;
   text-align: start;
+  margin-left: 54px;
 }
 .extra-mile-info h1 {
   color: var(--white);
@@ -263,9 +269,115 @@ header {
   flex: 1;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-right: 32px;
 }
 .extra-mile-img img {
   max-width: 100%;
   height: auto;
   border-radius: 18px;
+}
+
+/* BMI calculator start here */
+.cal-header {
+  width: 670px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.cal-header h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+.cal-header p {
+  color: var(--white-op-0-5);
+  font-size: 0.9rem;
+}
+.bmi-cal {
+  max-width: 1440px;
+  margin-top: 80px;
+  padding: 30px 0 30px 0;
+  background-color: rgba(34, 34, 34, 1);
+}
+.cal {
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.chart-title {
+  width: 443px;
+  margin-right: 44px;
+}
+.chart-title h2 {
+  color: var(--white);
+  font-size: 1.75rem;
+}
+.chart-title table {
+  max-width: 310px;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+.chart-title th,
+.chart-title td {
+  border: 1px solid var(--white-op-0-5);
+  padding: 10px 12px;
+}
+.chart-title th {
+  text-align: start;
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 500;
+}
+.chart-title td {
+  font-size: 0.88rem;
+  color: var(--white-op-0-5);
+}
+.cal-main-section h2 {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+}
+.cal-main-section p {
+  color: var(--white-op-0-5);
+  font-size: 0.88rem;
+  margin-bottom: 34px;
+}
+.cal-main-section input[type="text"],
+.cal-main-section select {
+  box-sizing: border-box;
+  margin: 10px 0;
+  margin-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 282px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  color: var(--white-op-0-5);
+  /* background color and not working in select option. If i use 0.5 alpha*/
+  /* background-color: var(--white-op-0-5); */
+  background-color: #383838;
+}
+.cal-main-section select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.submit-btn {
+  margin-top: 20px;
+}
+.cal-main-section input::placeholder {
+  color: var(--white-op-0-5);
+}
+.cal-main-section select[name="activity-fector"] {
+  width: calc(2 * 282px + 10px);
+}
+.cal-main-section input:focus,
+.cal-main-section select:focus {
+  outline: 1px solid var(--red);
 }

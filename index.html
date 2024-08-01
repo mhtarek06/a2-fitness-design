@@ -24,9 +24,15 @@
         <div class="banner-text">
           <div class="text-side-header">
             <!-- <div> -->
-            <h1>
+            <!-- <h1>
               Get body in <br />
               <span class="shape-text dancing-script-font">shape</span> & stay
+              <br />
+              healthy
+            </h1> -->
+            <h1>
+              Get body in <br />
+              <span class="shape-text">shape</span> & stay
               <br />
               healthy
             </h1>
@@ -132,6 +138,77 @@
 
         <div class="extra-mile-img">
           <img src="./images/run2.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div class="cal-header">
+          <h1>BMI Calculator</h1>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+        <div class="bmi-cal">
+          <div class="cal">
+            <div class="chart-title">
+              <h2>BMI Calculator Chart</h2>
+              <table>
+                <tr>
+                  <th>BMI</th>
+                  <th>Weight Status</th>
+                </tr>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </table>
+            </div>
+            <div class="cal-main-section">
+              <h2>Calculate your BMI</h2>
+              <p>
+                We believe fitness should be accessible to everyone, everywhere,
+                regardless of income or access to a gym.
+              </p>
+              <form>
+                <input type="text" placeholder="Height/cm" />
+                <input type="text" placeholder="Weight/kg" /> <br />
+                <input type="text" placeholder="Age" />
+                <select id="gender" name="gender" class="select-wrapper">
+                  <option value="" disabled selected>Sex</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <br />
+                <select name="activity-fector" class="select-wrapper" id="">
+                  <option value="" disabled selected>
+                    Select an activity factor
+                  </option>
+                  <option value="strength">Strength Training</option>
+                  <option value="cardio">Cardio Workouts</option>
+                  <option value="flexibility">Flexibility and Balance</option>
+                </select>
+                <br />
+                <input
+                  type="submit"
+                  class="primary-btn submit-btn"
+                  placeholder="Calculate"
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
