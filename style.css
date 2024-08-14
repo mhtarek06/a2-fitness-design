@@ -39,6 +39,7 @@ body {
 .display-flex {
   display: flex;
 }
+
 .primary-btn {
   font-size: 1rem;
   color: var(--white);
@@ -54,8 +55,7 @@ body {
 
 /* Header styles start here */
 header {
-  background-color: rgba(17, 17, 17, 1);
-  /* background-color: gray; */
+  background: linear-gradient(to bottom, #000000, #2b2b2b, #2b2b2b, #000000);
 }
 .header-class {
   max-width: 1044px;
@@ -113,8 +113,8 @@ header {
   font-size: 3.9rem;
 }
 .shape-text {
-  font-size: 5rem;
-  line-height: 1.4;
+  font-size: 4rem;
+  line-height:1;
   font-style: italic;
   font-family: "Miama", sans-serif;
   font-weight: 400;
@@ -671,16 +671,16 @@ footer hr {
   }
   .text-side-header h1 {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 30px;
   }
   .shape-text {
-    font-size: 3rem;
-    line-height: 2;
+    font-size: 2rem;
+    line-height: 1;
     font-family: "Miama", sans-serif;
     font-weight: 400;
   }
-  .text-side-header p {
+  .text-side-header p { 
     margin-top: 40px;
     margin-bottom: 40px;
   }
